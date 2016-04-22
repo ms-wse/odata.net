@@ -48,6 +48,7 @@ namespace Microsoft.OData.Core
         /// a name/value pair for target, as described above.
         /// </summary>
         /// <returns>The error details.</returns>
+        [SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public ICollection<ODataErrorDetail> Details { get; set; }
 
         /// <summary>Gets or sets the implementation specific debugging information to help determine the cause of the error.</summary>

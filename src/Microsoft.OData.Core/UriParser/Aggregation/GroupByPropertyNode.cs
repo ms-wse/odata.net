@@ -9,6 +9,7 @@ namespace Microsoft.OData.Core.UriParser.Aggregation
     using System.Collections.Generic;
     using Microsoft.OData.Edm;
     using Microsoft.OData.Core.UriParser.Semantic;
+    using System.Diagnostics.CodeAnalysis;
 
     /// <summary>
     /// A node representing a grouping property.
@@ -75,6 +76,7 @@ namespace Microsoft.OData.Core.UriParser.Aggregation
         /// <summary>
         /// Gets or sets the child transformations <see cref="GroupByPropertyNode"/>s of this node.
         /// </summary>
+        [SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public IList<GroupByPropertyNode> ChildTransformations
         {
             get

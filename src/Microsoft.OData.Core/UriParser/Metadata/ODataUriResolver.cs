@@ -42,6 +42,7 @@ namespace Microsoft.OData.Core.UriParser.Metadata
         /// <param name="leftNode">the left operand</param>
         /// <param name="rightNode">the right operand</param>
         /// <param name="typeReference">type reference for the result BinaryOperatorNode.</param>
+        [SuppressMessage("Microsoft.Design", "CA1045:DoNotPassTypesByReference")]
         public virtual void PromoteBinaryOperandTypes(
                BinaryOperatorKind binaryOperatorKind,
                ref SingleValueNode leftNode,
